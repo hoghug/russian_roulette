@@ -10,7 +10,7 @@ class Game
     @loaded_chamber = chamber_num
   end
 
-  def spin
+  def spin_cylinder
     @revolver_spins = rand(0..10)
     @revolver_spins.times { @chambers << @chambers.shift }
   end
